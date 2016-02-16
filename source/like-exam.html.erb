@@ -1,4 +1,3 @@
-
 <div class="demo-runner js-demo-runner">
 </div>
 
@@ -9,7 +8,7 @@
   </div>
 
   <div class="l-menu">
-    <div class="menu menu--regular" data-order-step="1 2 5">
+    <div class="menu menu--with-form" data-order-step="1 2 5">
       <p class="menu__message">Este es nuestro menú</p>
 
       <% data.kitchens.my_office_lunch.sections.each do |section| %>
@@ -22,21 +21,32 @@
                 <div class="menu__item-image">
                   <img src="<%= dish[:image_url] %>"/>
                 </div>
-                <div class="menu__item-header">
-                  <h4><%= dish[:name] %></h4>
-                </div>
-                <div class="menu__item-description">
-                  <p><%= dish[:description] %></p>
-                </div>
 
-                <div class="menu__item-selected-message">
-                  <i class="fa fa-check"></i> Seleccionado<br/>
-                  <a href="#">
-                    <i class="fa fa-pencil-square-o"></i> Quitar selección
-                  </a>
-                </div>
+                <div class="menu__item-content">
+                  <div class="menu__item-header">
+                    <h4><%= dish[:name] %></h4>
+                  </div>
+                  <div class="menu__item-description">
+                    <p><%= dish[:description] %></p>
+                  </div>
 
-                <button class="menu__item-button">Seleccionar</button>
+                  <label>
+                    <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Lunes
+                  </label>
+                  <label>
+                    <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Martes
+                  </label>
+                  <label>
+                    <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Miercoles
+                  </label>
+                  <label>
+                    <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Jueves
+                  </label>
+                  <label>
+                    <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Viernes
+                  </label>
+
+                </div>
               </div>
             <% end %>
           </div>
