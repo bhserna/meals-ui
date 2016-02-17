@@ -1,0 +1,733 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>The Middleman</title>
+
+    <link href="/stylesheets/normalize.css" rel="stylesheet" type="text/css" /><link href="/stylesheets/all.css" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/all.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  </head>
+
+  <body class="like-exam">
+    <div class="demo-runner js-demo-runner">
+</div>
+
+<div class="hero">
+  <div class="hero-inner">
+    <a href="" class="hero-logo"><img src="https://scontent-lax3-1.xx.fbcdn.net/hphotos-xpl1/t31.0-8/12244712_1122903224401444_4808584607165806524_o.jpg" alt="Logo Image"></a>
+    <div class="hero-copy">
+      <h1>My office lunch</h1>
+      <p>Comida casera saludable a domicilio.</p>
+    </div>
+  </div>
+</div>
+
+<div class="order-v2 order-v2--open" data-order-step="2 3 4 5 6 7 8">
+  <div class="order-toggle">
+    <a href="#" class="order-toggle__show js-order-toggle"><i class="fa fa-arrow-down"></i> Mostrar orden</a>
+    <a href="#" class="order-toggle__hide js-order-toggle"><i class="fa fa-arrow-up"></i> Ocultar</a>
+  </div>
+
+  <div class="order">
+    <div class="order-controls" data-order-step="7 8">
+      <a href="#" data-order-step="7"><i class="fa fa-arrow-left"></i> Regresar al pedido</a>
+      <a href="#" data-order-step="8"><i class="fa fa-arrow-left"></i> Regresar a los datos personales</a>
+    </div>
+
+    <div class="" data-order-step="2 3 4 5 6">
+      <p class="order__message">
+      Este es tu pedido para la siguiente semana.<br/>
+      <small class="order__hint">(del 22 al 26 de febrero)</small>
+      </p>
+    </div>
+
+    <div class="" data-order-step="2">
+      <p class="order__selection-completed-message">
+      Para el día <strong>Lunes</strong> pediste <strong>Ensalada de la casa</strong>, <strong>Pollo poblano</strong> y <strong>Gelatina de fresa</strong>.<br/>
+      </p>
+
+      <p class="order__selection-completed-message">
+      Como has seleccionado comida para 1 día el paquete que se te cobraría es el <strong>Paquete de 1 día</strong> con un precio de <strong>$89.00</strong>.<br/>
+      </p>
+
+
+      <button class="order__button">Confirmar orden.</button>
+    </div>
+
+    <div class="" data-order-step="3">
+      <p class="order__selection-completed-message">
+      Para el día <strong>Lunes</strong> pediste <strong>Ensalada de la casa</strong>, <strong>Pollo poblano</strong> y <strong>Gelatina de fresa</strong>.<br/>
+      </p>
+
+      <p class="order__selection-completed-message">
+      Para el día <strong>Martes</strong> pediste <strong>Ensalada de la casa</strong>, <strong>Pollo poblano</strong> y <strong>Gelatina de fresa</strong>.<br/>
+      </p>
+
+
+      <button class="order__button" disabled>Confirmar orden.</button>
+    </div>
+
+    <div class="" data-order-step="4">
+      <p class="order__selection-completed-message">
+      Para el día <strong>Lunes</strong> pediste <strong>Ensalada de la casa</strong>, <strong>Pollo poblano</strong> y <strong>Gelatina de fresa</strong>.<br/>
+      </p>
+
+      <p class="order__selection-completed-message">
+      Para el día <strong>Martes</strong> pediste <strong>Ensalada de la casa</strong>, <strong>Pollo poblano</strong> y <strong>Gelatina de fresa</strong>.<br/>
+      </p>
+
+      <p class="order__selection-completed-message">
+      Para el día <strong>Miercoles</strong> pediste <strong>Ensalada de la casa</strong>, <strong>Pollo poblano</strong> y <strong>Gelatina de fresa</strong>.<br/>
+      </p>
+
+      <p class="order__selection-completed-message">
+      Como has seleccionado comida para 3 días el paquete que se te cobraría es el <strong>Paquete de 3 días</strong> con un precio de <strong>$249.00</strong>.<br/>
+      </p>
+
+
+      <button class="order__button">Confirmar orden.</button>
+    </div>
+
+    <div class="" data-order-step="5">
+      <p class="order__selection-completed-message">
+      Para el día <strong>Lunes</strong> pediste <strong>Ensalada de la casa</strong>, <strong>Pollo poblano</strong> y <strong>Gelatina de fresa</strong>.<br/>
+      </p>
+
+      <p class="order__selection-completed-message">
+      Para el día <strong>Martes</strong> pediste <strong>Ensalada de la casa</strong>, <strong>Pollo poblano</strong> y <strong>Gelatina de fresa</strong>.<br/>
+      </p>
+
+      <p class="order__selection-completed-message">
+      Para el día <strong>Miercoles</strong> pediste <strong>Ensalada de la casa</strong>, <strong>Pollo poblano</strong> y <strong>Gelatina de fresa</strong>.<br/>
+      </p>
+
+      <p class="order__selection-completed-message">
+      Para el día <strong>Jueves</strong> pediste <strong>Ensalada de la casa</strong>, <strong>Pollo poblano</strong> y <strong>Gelatina de fresa</strong>.<br/>
+      </p>
+
+      <button class="order__button" disabled>Confirmar orden.</button>
+    </div>
+
+    <div class="" data-order-step="6">
+      <p class="order__selection-completed-message">
+      Para el día <strong>Lunes</strong> pediste <strong>Ensalada de la casa</strong>, <strong>Pollo poblano</strong> y <strong>Gelatina de fresa</strong>.<br/>
+      </p>
+
+      <p class="order__selection-completed-message">
+      Para el día <strong>Martes</strong> pediste <strong>Ensalada de la casa</strong>, <strong>Pollo poblano</strong> y <strong>Gelatina de fresa</strong>.<br/>
+      </p>
+
+      <p class="order__selection-completed-message">
+      Para el día <strong>Miercoles</strong> pediste <strong>Ensalada de la casa</strong>, <strong>Pollo poblano</strong> y <strong>Gelatina de fresa</strong>.<br/>
+      </p>
+
+      <p class="order__selection-completed-message">
+      Para el día <strong>Jueves</strong> pediste <strong>Ensalada de la casa</strong>, <strong>Pollo poblano</strong> y <strong>Gelatina de fresa</strong>.<br/>
+      </p>
+
+      <p class="order__selection-completed-message">
+      Para el día <strong>Viernes</strong> pediste <strong>Ensalada de la casa</strong>, <strong>Pollo poblano</strong> y <strong>Gelatina de fresa</strong>.<br/>
+      </p>
+
+      <p class="order__selection-completed-message">
+      Como has seleccionado comida para 5 días el paquete que se te cobraría es el <strong>Paquete de 3 días</strong> con un precio de <strong>$369.00</strong>.<br/>
+      </p>
+
+      <button class="order__button">Confirmar orden.</button>
+    </div>
+
+    <div class="" data-order-step="7">
+      <p class="order__message">Te pedimos unos datos personales para saber a quien llevamos la comida.</p>
+
+      <div class="order__fieldset">
+        <p>
+        <label for="text_field">Tu nombre</label>
+        <input type="text" id="text_field">
+        </p>
+
+        <p>
+        <label for="text_field">Tu correo electrónico</label>
+        <input type="text" id="text_field">
+        </p>
+
+        <p>
+        <label for="text_field">Un teléfono de casa o celular</label>
+        <input type="text" id="text_field">
+        </p>
+        <button class="order__button" disabled>Confirmar datos personales</button>
+      </div>
+    </div>
+    <div class="" data-order-step="8">
+      <p class="order__message">Ahora la
+      dirección a donde quieres que llevemos tu comida</p>
+
+      <div class="order__fieldset">
+        <p>
+        <label for="text_field">Calle y Número</label>
+        <input type="text" id="text_field">
+        </p>
+        <p>
+        <label for="text_field">Colonia</label>
+        <input type="text" id="text_field">
+        </p>
+        <p>
+        <label for="text_field">Codigo postal</label>
+        <input type="text" id="text_field">
+        </p>
+      </div>
+
+      <p class="order__hint text-center">Por ahora solo hacemos entregas en la Zona Sur, del la ciudad de Monterrey, Nuevo León, México</p>
+      <p class="order__hint text-center">Las entregas son los Domingos de 8pm a 11pm y los Martes y Miercoles de 8:30pm a 11pm.</p>
+      <p class="order__hint text-center">El pago de tu orden lo podrás hacer en efectivo el día de la entrega.</p>
+
+      <button class="order__button">Confirmar y envíar pedido.</button>
+    </div>
+  </div>
+</div>
+
+<div class="l-with-columns" data-order-step="1 2 3 4 5 6 7 8">
+  <div class="l-menu-centered">
+    <div class="menu menu--with-form">
+      <div class="menu__section">
+        <p class="menu__message">Estos son nuestros paquetes</p>
+        <div class="packages-list">
+  <div class="order__package">
+    <div class="order__package-description">
+      <h1>Paquete de 1 día</h1>
+
+      <ul>
+        <li>1 entrada</li>
+        <li>1 plato fuerte</li>
+        <li>1 postre</li>
+        <li>Entrega a domicilio</li>
+      </ul>
+
+      <strong class="order__package-price">$89.00</strong>
+    </div>
+  </div>
+  <div class="order__package">
+    <div class="order__package-description">
+      <h1>Paquete de 3 días</h1>
+
+      <ul>
+        <li>3 entrada</li>
+        <li>3 plato fuerte</li>
+        <li>3 postre</li>
+        <li>Entrega a domicilio</li>
+      </ul>
+
+      <strong class="order__package-price">$249.00</strong>
+    </div>
+  </div>
+  <div class="order__package">
+    <div class="order__package-description">
+      <h1>Paquete de 5 días</h1>
+
+      <ul>
+        <li>5 entrada</li>
+        <li>5 plato fuerte</li>
+        <li>5 postre</li>
+        <li>Entrega a domicilio</li>
+      </ul>
+
+      <strong class="order__package-price">$369.00</strong>
+    </div>
+  </div>
+</div>
+
+      </div>
+
+
+      <div class="menu__section">
+        <p class="menu__message">
+        Este es nuestro menú <br/>
+        <small class="order__hint">
+          Selecciona el día en que quieras recibir cada comida
+          para empezar tu orden para la siguiente semana del 22 al 26 de febrero.
+        </small>
+        </p>
+          <div class="menu__section">
+    <h1 class="menu__section-title">Entradas</h3>
+
+    <div class="menu__items">
+        <div class="menu__item">
+          <div class="menu__item-image">
+            <img src="http://servinox.com.mx/blog/wp-content/uploads/2014/08/13573466_xl.jpg"/>
+          </div>
+
+          <div class="menu__item-content">
+            <div class="menu__item-header">
+              <h4>Ensalada de la casa</h4>
+            </div>
+            <div class="menu__item-description">
+              <p>mix de lechugas, zanahoria, pepino y tomate</p>
+            </div>
+
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Lunes
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Martes
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Miercoles
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Jueves
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Viernes
+            </label>
+
+          </div>
+        </div>
+        <div class="menu__item">
+          <div class="menu__item-image">
+            <img src="http://servinox.com.mx/blog/wp-content/uploads/2014/08/13573466_xl.jpg"/>
+          </div>
+
+          <div class="menu__item-content">
+            <div class="menu__item-header">
+              <h4>Ensalada de mango</h4>
+            </div>
+            <div class="menu__item-description">
+              <p>Mix de lechugas, zanahoria, mango y cacahuate</p>
+            </div>
+
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Lunes
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Martes
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Miercoles
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Jueves
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Viernes
+            </label>
+
+          </div>
+        </div>
+        <div class="menu__item">
+          <div class="menu__item-image">
+            <img src="http://servinox.com.mx/blog/wp-content/uploads/2014/08/13573466_xl.jpg"/>
+          </div>
+
+          <div class="menu__item-content">
+            <div class="menu__item-header">
+              <h4>Ensalada de piña</h4>
+            </div>
+            <div class="menu__item-description">
+              <p>mix de lechugas, piña asada, morrones y coco deshidratado.</p>
+            </div>
+
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Lunes
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Martes
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Miercoles
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Jueves
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Viernes
+            </label>
+
+          </div>
+        </div>
+        <div class="menu__item">
+          <div class="menu__item-image">
+            <img src="http://servinox.com.mx/blog/wp-content/uploads/2014/08/13573466_xl.jpg"/>
+          </div>
+
+          <div class="menu__item-content">
+            <div class="menu__item-header">
+              <h4>Sopa de verduras</h4>
+            </div>
+            <div class="menu__item-description">
+              <p>caldo de pollo con verduras y el toque especial de la casa</p>
+            </div>
+
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Lunes
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Martes
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Miercoles
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Jueves
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Viernes
+            </label>
+
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="menu__section">
+    <h1 class="menu__section-title">Platos fuertes</h3>
+
+    <div class="menu__items">
+        <div class="menu__item">
+          <div class="menu__item-image">
+            <img src="http://servinox.com.mx/blog/wp-content/uploads/2014/08/13573466_xl.jpg"/>
+          </div>
+
+          <div class="menu__item-content">
+            <div class="menu__item-header">
+              <h4>Ensalada cesar</h4>
+            </div>
+            <div class="menu__item-description">
+              <p> mix de lechugas, crotones, zanahoria, tomate pechuga de pollo, queso parmesano.</p>
+            </div>
+
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Lunes
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Martes
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Miercoles
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Jueves
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Viernes
+            </label>
+
+          </div>
+        </div>
+        <div class="menu__item">
+          <div class="menu__item-image">
+            <img src="http://clande-products.s3.amazonaws.com/172359-co_atrio-la-bodega-iberica_ag-thumb.jpg"/>
+          </div>
+
+          <div class="menu__item-content">
+            <div class="menu__item-header">
+              <h4>Ensalada de atun</h4>
+            </div>
+            <div class="menu__item-description">
+              <p>MIX DE LECHUGAS, ZANAHORIA, tomate, cebolla morada, elote y atun en agua.</p>
+            </div>
+
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Lunes
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Martes
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Miercoles
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Jueves
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Viernes
+            </label>
+
+          </div>
+        </div>
+        <div class="menu__item">
+          <div class="menu__item-image">
+            <img src="http://clande-products.s3.amazonaws.com/172359-co_atrio-la-bodega-iberica_ag-thumb.jpg"/>
+          </div>
+
+          <div class="menu__item-content">
+            <div class="menu__item-header">
+              <h4>Pollo poblano</h4>
+            </div>
+            <div class="menu__item-description">
+              <p>pechuga a la plancha bañada con salsa de chile poblano</p>
+            </div>
+
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Lunes
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Martes
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Miercoles
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Jueves
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Viernes
+            </label>
+
+          </div>
+        </div>
+        <div class="menu__item">
+          <div class="menu__item-image">
+            <img src="http://clande-products.s3.amazonaws.com/172359-co_atrio-la-bodega-iberica_ag-thumb.jpg"/>
+          </div>
+
+          <div class="menu__item-content">
+            <div class="menu__item-header">
+              <h4>pescado a la mexicana</h4>
+            </div>
+            <div class="menu__item-description">
+              <p>filete de pescado bañado con salsa de tomate y chile morron.</p>
+            </div>
+
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Lunes
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Martes
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Miercoles
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Jueves
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Viernes
+            </label>
+
+          </div>
+        </div>
+        <div class="menu__item">
+          <div class="menu__item-image">
+            <img src="http://clande-products.s3.amazonaws.com/172359-co_atrio-la-bodega-iberica_ag-thumb.jpg"/>
+          </div>
+
+          <div class="menu__item-content">
+            <div class="menu__item-header">
+              <h4>alambre de res</h4>
+            </div>
+            <div class="menu__item-description">
+              <p>deliciosa carne de res en tiras guisada con tocino de pavo, mix de morrones y cebolla</p>
+            </div>
+
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Lunes
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Martes
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Miercoles
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Jueves
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Viernes
+            </label>
+
+          </div>
+        </div>
+        <div class="menu__item">
+          <div class="menu__item-image">
+            <img src="http://clande-products.s3.amazonaws.com/172359-co_atrio-la-bodega-iberica_ag-thumb.jpg"/>
+          </div>
+
+          <div class="menu__item-content">
+            <div class="menu__item-header">
+              <h4>entomatadas</h4>
+            </div>
+            <div class="menu__item-description">
+              <p>RELLENAS DE POLLO BAÑADAS CON salsa roja y queso chihuahua.</p>
+            </div>
+
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Lunes
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Martes
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Miercoles
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Jueves
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Viernes
+            </label>
+
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="menu__section">
+    <h1 class="menu__section-title">Postres</h3>
+
+    <div class="menu__items">
+        <div class="menu__item">
+          <div class="menu__item-image">
+            <img src="http://cdn2.recetasgratis.net/es/images/5/8/2/img_postre_mil_y_una_gelatina_10285_600.jpg"/>
+          </div>
+
+          <div class="menu__item-content">
+            <div class="menu__item-header">
+              <h4>Gelatina de fresa</h4>
+            </div>
+            <div class="menu__item-description">
+              <p></p>
+            </div>
+
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Lunes
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Martes
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Miercoles
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Jueves
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Viernes
+            </label>
+
+          </div>
+        </div>
+        <div class="menu__item">
+          <div class="menu__item-image">
+            <img src="http://cdn2.recetasgratis.net/es/images/5/8/2/img_postre_mil_y_una_gelatina_10285_600.jpg"/>
+          </div>
+
+          <div class="menu__item-content">
+            <div class="menu__item-header">
+              <h4>Gelatina de piña</h4>
+            </div>
+            <div class="menu__item-description">
+              <p></p>
+            </div>
+
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Lunes
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Martes
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Miercoles
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Jueves
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Viernes
+            </label>
+
+          </div>
+        </div>
+        <div class="menu__item">
+          <div class="menu__item-image">
+            <img src="http://cdn2.recetasgratis.net/es/images/5/8/2/img_postre_mil_y_una_gelatina_10285_600.jpg"/>
+          </div>
+
+          <div class="menu__item-content">
+            <div class="menu__item-header">
+              <h4>Carlota de mango</h4>
+            </div>
+            <div class="menu__item-description">
+              <p></p>
+            </div>
+
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Lunes
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Martes
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Miercoles
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Jueves
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Viernes
+            </label>
+
+          </div>
+        </div>
+    </div>
+  </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="l-with-columns" data-order-step="3">
+
+
+<div class="l-with-columns" data-order-step="4">
+  <div class="page-header">
+    <h1>My office lunch</h1>
+    <p>Comida casera saludable a domicilio.</p>
+  </div>
+
+    <p class="order__message">Ahora te pedimos unos datos personales y la
+    dirección a donde quieres que llevemos tu comida</p>
+
+    <div class="order__fieldset">
+      <p>
+      <label for="text_field">Tu nombre</label>
+      <input type="text" id="text_field">
+      </p>
+
+      <p>
+      <label for="text_field">Tu correo electrónico</label>
+      <input type="text" id="text_field">
+      </p>
+
+      <p>
+      <label for="text_field">Un teléfono de casa o celular</label>
+      <input type="text" id="text_field">
+      </p>
+
+      <p>
+      <label for="text_field">Calle y Número</label>
+      <input type="text" id="text_field">
+      </p>
+      <p>
+      <label for="text_field">Colonia</label>
+      <input type="text" id="text_field">
+      </p>
+      <p>
+      <label for="text_field">Codigo postal</label>
+      <input type="text" id="text_field">
+      </p>
+    </div>
+
+    <p class="order__hint text-center">Por ahora solo hacemos entregas en la Zona Sur, del la ciudad de Monterrey, Nuevo León, México</p>
+    <p class="order__hint text-center">Las entregas son los Domingos de 8pm a 11pm y los Martes y Miercoles de 8:30pm a 11pm.</p>
+    <p class="order__hint text-center">El pago de tu orden lo podrás hacer en efectivo el día de la entrega.</p>
+
+    <button class="order__button">Confirmar y envíar pedido.</button>
+  </div>
+</div>
+
+  </body>
+</html>
