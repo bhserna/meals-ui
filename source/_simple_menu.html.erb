@@ -1,0 +1,30 @@
+<% data.kitchens.my_office_lunch.sections.each do |section| %>
+  <div class="menu__section">
+    <h1 class="menu__section-title"><%= section.type %></h3>
+
+    <div class="menu__items">
+      <% section.dishes.each do |dish| %>
+        <div class="menu__item">
+          <div class="menu__item-image">
+            <img src="<%= dish[:image_url] %>"/>
+          </div>
+          <div class="menu__item-header">
+            <h4><%= dish[:name] %></h4>
+          </div>
+          <div class="menu__item-description">
+            <p><%= dish[:description] %></p>
+          </div>
+
+          <div class="menu__item-selected-message">
+            <i class="fa fa-check"></i> Seleccionado<br/>
+            <a href="#">
+              <i class="fa fa-pencil-square-o"></i> Quitar selección
+            </a>
+          </div>
+
+          <button class="menu__item-button">Seleccionar</button>
+        </div>
+      <% end %>
+    </div>
+  </div>
+<% end %>

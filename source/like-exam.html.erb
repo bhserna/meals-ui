@@ -1,314 +1,132 @@
 <div class="demo-runner js-demo-runner">
 </div>
 
-<div class="l-page-with-order">
-  <div class="page-header">
-    <h1>My office lunch</h1>
-    <p>Comida casera saludable a domicilio.</p>
-  </div>
-
-  <div class="l-menu">
-    <div class="menu menu--with-form" data-order-step="1 2 5">
-      <p class="menu__message">Este es nuestro menú</p>
-
-      <% data.kitchens.my_office_lunch.sections.each do |section| %>
-        <div class="menu__section">
-          <h1 class="menu__section-title"><%= section.type %></h3>
-
-          <div class="menu__items">
-            <% section.dishes.each do |dish| %>
-              <div class="menu__item">
-                <div class="menu__item-image">
-                  <img src="<%= dish[:image_url] %>"/>
-                </div>
-
-                <div class="menu__item-content">
-                  <div class="menu__item-header">
-                    <h4><%= dish[:name] %></h4>
-                  </div>
-                  <div class="menu__item-description">
-                    <p><%= dish[:description] %></p>
-                  </div>
-
-                  <label>
-                    <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Lunes
-                  </label>
-                  <label>
-                    <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Martes
-                  </label>
-                  <label>
-                    <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Miercoles
-                  </label>
-                  <label>
-                    <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Jueves
-                  </label>
-                  <label>
-                    <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Viernes
-                  </label>
-
-                </div>
-              </div>
-            <% end %>
-          </div>
-        </div>
-      <% end %>
-    </div>
-    <div class="menu" data-order-step="3">
-      <p class="menu__message">Este es nuestro menú</p>
-
-      <% data.kitchens.my_office_lunch.sections.each do |section| %>
-        <div class="menu__section">
-          <h1 class="menu__section-title"><%= section.type %></h3>
-
-          <div class="menu__items">
-            <% section.dishes.each do |dish| %>
-              <div class="menu__item menu__item--selectable">
-                <div class="menu__item-image">
-                  <img src="<%= dish[:image_url] %>"/>
-                </div>
-                <div class="menu__item-header">
-                  <h4><%= dish[:name] %></h4>
-                </div>
-                <div class="menu__item-description">
-                  <p><%= dish[:description] %></p>
-                </div>
-
-                <div class="menu__item-selected-message">
-                  <i class="fa fa-check"></i> Seleccionado<br/>
-                  <a href="#">
-                    <i class="fa fa-pencil-square-o"></i> Quitar selección
-                  </a>
-                </div>
-
-                <button class="menu__item-button">Seleccionar</button>
-              </div>
-            <% end %>
-          </div>
-        </div>
-      <% end %>
-    </div>
-    <div class="menu" data-order-step="4">
-      <p class="menu__message">Este es nuestro menú</p>
-
-      <% data.kitchens.my_office_lunch.sections.each do |section| %>
-        <div class="menu__section">
-          <h1 class="menu__section-title"><%= section.type %></h3>
-
-          <div class="menu__items">
-            <% section.dishes.each do |dish| %>
-              <div class="menu__item menu__item--selectable menu__item--selected">
-                <div class="menu__item-image">
-                  <img src="<%= dish[:image_url] %>"/>
-                </div>
-                <div class="menu__item-header">
-                  <h4><%= dish[:name] %></h4>
-                </div>
-                <div class="menu__item-description">
-                  <p><%= dish[:description] %></p>
-                </div>
-
-                <div class="menu__item-selected-message">
-                  <i class="fa fa-check"></i> Seleccionado<br/>
-                  <a href="#">
-                    <i class="fa fa-pencil-square-o"></i> Quitar selección
-                  </a>
-                </div>
-
-                <button class="menu__item-button">Seleccionar</button>
-              </div>
-            <% end %>
-          </div>
-        </div>
-      <% end %>
+<div class="hero">
+  <div class="hero-inner">
+    <a href="" class="hero-logo"><img src="https://scontent-lax3-1.xx.fbcdn.net/hphotos-xpl1/t31.0-8/12244712_1122903224401444_4808584607165806524_o.jpg" alt="Logo Image"></a>
+    <div class="hero-copy">
+      <h1>My office lunch</h1>
+      <p>Comida casera saludable a domicilio.</p>
     </div>
   </div>
-  <div class="l-order">
-    <div class="order">
+</div>
+
+<div class="order-v2 order-v2--open" data-order-step="2 3 4 5 6 7 8">
+  <div class="order-toggle">
+    <a href="#" class="order-toggle__show js-order-toggle"><i class="fa fa-arrow-down"></i> Mostrar orden</a>
+    <a href="#" class="order-toggle__hide js-order-toggle"><i class="fa fa-arrow-up"></i> Ocultar</a>
+  </div>
+
+  <div class="order">
+    <div class="order-controls" data-order-step="7 8">
+      <a href="#" data-order-step="7"><i class="fa fa-arrow-left"></i> Regresar al pedido</a>
+      <a href="#" data-order-step="8"><i class="fa fa-arrow-left"></i> Regresar a los datos personales</a>
+    </div>
+
+    <div class="" data-order-step="2 3 4 5 6">
       <p class="order__message">
       Este es tu pedido para la siguiente semana.<br/>
-      <small class="order__hint">(del 8 al 12 de febrero)</small>
-      </p>
-
-      <div class="is-hidden" data-order-step="1">
-        <p class="order__message">Primero selecciona un paquete para después elegir tu comida.</p>
-
-        <form>
-          <label class="order__package">
-            <input type="radio" class="radio" name="radio_button" value="radio_1">
-            <div class="order__package-description">
-              <strong class="order__package-price">$89.00</strong>
-              <h1>Paquete de 1 día</h1>
-
-              <ul>
-                <li>1 entrada</li>
-                <li>1 plato fuerte</li>
-                <li>1 postre</li>
-                <li>Entrega a domicilio</li>
-              </ul>
-            </div>
-          </label>
-          <label class="order__package">
-            <input type="radio" class="radio" name="radio_button" value="radio_2">
-            <div class="order__package-description">
-              <strong class="order__package-price">$249.00</strong>
-              <h1>Paquete de 3 días</h1>
-
-              <ul>
-                <li>3 entrada</li>
-                <li>3 plato fuerte</li>
-                <li>3 postre</li>
-                <li>Entrega a domicilio</li>
-              </ul>
-            </div>
-          </label>
-          <label class="order__package">
-            <input type="radio" class="radio" name="radio_button" value="radio_3">
-            <div class="order__package-description">
-              <strong class="order__package-price">$369.00</strong>
-              <h1>Paquete de 5 días</h1>
-
-              <ul>
-                <li>5 entrada</li>
-                <li>5 plato fuerte</li>
-                <li>5 postre</li>
-                <li>Entrega a domicilio</li>
-              </ul>
-            </div>
-          </label>
-
-          <button class="order__button">Confirmar mi selección de paquete</button>
-        </form>
-      </div>
-
-      <div class="is-hidden" data-order-step="2">
-        <p class="order__selection-completed-message">
-        Elegiste el <strong>Paquete de 1 día</strong> con un precio de <strong>$89.00</strong>.<br/>
-        <a href="#"><i class="fa fa-pencil-square-o"></i> Cambiar elección.</a>
-        </p>
-
-        <p class="order__message">Ahora dinos para que día quieres tu comida.</p>
-
-
-        <div class="order__days-selection-options">
-          <label>
-            <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"> Lunes
-          </label>
-          <label>
-            <input type="checkbox" class="checkbox" name="checkboxes" value="check_2"> Martes
-          </label>
-          <label>
-            <input type="checkbox" class="checkbox" name="checkboxes" value="check_3"> Miercoles
-          </label>
-          <label>
-            <input type="checkbox" class="checkbox" name="checkboxes" value="check_2"> Jueves
-          </label>
-          <label>
-            <input type="checkbox" class="checkbox" name="checkboxes" value="check_3"> Viernes
-          </label>
-        </div>
-        <button class="order__button">Confirmar días seleccionados</button>
+      <small class="order__hint">(del 22 al 26 de febrero)</small>
       </p>
     </div>
-    <div class="orders__meals-selection is-hidden" data-order-step="3">
-      <p class="order__selection-completed-message">
-      Elegiste el <strong>Paquete de 1 día</strong> con un precio de <strong>$89.00</strong>.<br/>
-      <a href="#"><i class="fa fa-pencil-square-o"></i> Cambiar selección.<br/></a>
-      </p>
 
-      <p class="order__selection-completed-message">
-      Elegiste recibir tu comida los días <strong>Lunes, Martes y Miercoles</strong>.<br/>
-      <a href="#"><i class="fa fa-pencil-square-o"></i> Cambiar selección.</a>
-      </p>
-
-      <p class="order__message">Ahora dinos que quieres comer en cada día.</p>
-
-      <div class="order__day-selection">
-        <h1>Lunes</h1>
-
-        <h2>Entrada</h2>
-        <p class="order__hint">Da click en una de las entradas para seleccionarla.</p>
-
-        <h2>Plato fuerte</h2>
-        <p class="order__hint">Da click en uno de los platos fuertes para seleccionarlo.</p>
-
-        <h2>Postre</h2>
-        <p class="order__hint">Da click en uno de los postres para seleccionarlo.</p>
-      </div>
-      <button class="order__button">Confirmar platillos del Martes</button>
-    </div>
-
-    <div class="orders__meals-selection is-hidden" data-order-step="4">
-      <p class="order__selection-completed-message">
-      Elegiste el <strong>Paquete de 1 día</strong> con un precio de <strong>$89.00</strong>.<br/>
-      <a href="#"><i class="fa fa-pencil-square-o"></i> Cambiar selección.<br/></a>
-      </p>
-
-      <p class="order__selection-completed-message">
-      Elegiste recibir tu comida los días <strong>Lunes, Martes y Miercoles</strong>.<br/>
-      <a href="#"><i class="fa fa-pencil-square-o"></i> Cambiar selección.</a>
-      </p>
-
-      <p class="order__message">Ahora dinos que quieres comer en cada día.</p>
-
+    <div class="" data-order-step="2">
       <p class="order__selection-completed-message">
       Para el día <strong>Lunes</strong> pediste <strong>Ensalada de la casa</strong>, <strong>Pollo poblano</strong> y <strong>Gelatina de fresa</strong>.<br/>
-      <a href="#"><i class="fa fa-pencil-square-o"></i> Cambiar selección.</a>
       </p>
-
-      <div class="order__day-selection">
-        <h1>Martes</h1>
-
-        <h2>Entrada</h2>
-        <p class="order__hint is-hidden">Da click en una de las entradas para seleccionarla.</p>
-        <p>
-        Ensalada de la casa<br/>
-        <a href="#"><i class="fa fa-pencil-square-o"></i> Quitar selección.</a>
-        </p>
-
-        <h2>Plato fuerte</h2>
-        <p class="order__hint">Da click en uno de los platos fuertes para seleccionarlo.</p>
-
-        <h2>Postre</h2>
-        <p class="order__hint">Da click en uno de los postres para seleccionarlo.</p>
-      </div>
-      <button class="order__button">Confirmar platillos del Martes</button>
 
       <p class="order__selection-completed-message">
-      Para el día <strong>Miercoles</strong> pediste <strong>Ensalada de la casa</strong>, <strong>Pollo poblano</strong> y <strong>Gelatina de fresa</strong>.<br/>
-      <a href="#"><i class="fa fa-pencil-square-o"></i> Cambiar selección.</a>
+      Como has seleccionado comida para 1 día el paquete que se te cobraría es el <strong>Paquete de 1 día</strong> con un precio de <strong>$89.00</strong>.<br/>
       </p>
+
+
+      <button class="order__button">Confirmar orden.</button>
     </div>
 
-    <div class="" data-order-step="5">
-      <p class="order__selection-completed-message">
-      Elegiste el <strong>Paquete de 1 día</strong> con un precio de <strong>$89.00</strong>.<br/>
-      <a href="#"><i class="fa fa-pencil-square-o"></i> Cambiar selección.</a><br/>
-      <small class="order__hint text-center">
-        Nota: Cambiar la selección deshace las selecciones posteriores.
-      </small>
-      </p>
-
-      <p class="order__selection-completed-message">
-      Elegiste recibir tu comida los días <strong>Lunes, Martes y Miercoles</strong>.<br/>
-      <a href="#"><i class="fa fa-pencil-square-o"></i> Cambiar selección.</a>
-      </p>
-
+    <div class="" data-order-step="3">
       <p class="order__selection-completed-message">
       Para el día <strong>Lunes</strong> pediste <strong>Ensalada de la casa</strong>, <strong>Pollo poblano</strong> y <strong>Gelatina de fresa</strong>.<br/>
-      <a href="#"><i class="fa fa-pencil-square-o"></i> Cambiar selección.</a>
       </p>
 
       <p class="order__selection-completed-message">
       Para el día <strong>Martes</strong> pediste <strong>Ensalada de la casa</strong>, <strong>Pollo poblano</strong> y <strong>Gelatina de fresa</strong>.<br/>
-      <a href="#"><i class="fa fa-pencil-square-o"></i> Cambiar selección.</a>
+      </p>
+
+
+      <button class="order__button" disabled>Confirmar orden.</button>
+    </div>
+
+    <div class="" data-order-step="4">
+      <p class="order__selection-completed-message">
+      Para el día <strong>Lunes</strong> pediste <strong>Ensalada de la casa</strong>, <strong>Pollo poblano</strong> y <strong>Gelatina de fresa</strong>.<br/>
+      </p>
+
+      <p class="order__selection-completed-message">
+      Para el día <strong>Martes</strong> pediste <strong>Ensalada de la casa</strong>, <strong>Pollo poblano</strong> y <strong>Gelatina de fresa</strong>.<br/>
       </p>
 
       <p class="order__selection-completed-message">
       Para el día <strong>Miercoles</strong> pediste <strong>Ensalada de la casa</strong>, <strong>Pollo poblano</strong> y <strong>Gelatina de fresa</strong>.<br/>
-      <a href="#"><i class="fa fa-pencil-square-o"></i> Cambiar selección.</a>
       </p>
 
-      <p class="order__message">Ahora te pedimos unos datos personales para saber a quien llevamos la comida.</p>
+      <p class="order__selection-completed-message">
+      Como has seleccionado comida para 3 días el paquete que se te cobraría es el <strong>Paquete de 3 días</strong> con un precio de <strong>$249.00</strong>.<br/>
+      </p>
+
+
+      <button class="order__button">Confirmar orden.</button>
+    </div>
+
+    <div class="" data-order-step="5">
+      <p class="order__selection-completed-message">
+      Para el día <strong>Lunes</strong> pediste <strong>Ensalada de la casa</strong>, <strong>Pollo poblano</strong> y <strong>Gelatina de fresa</strong>.<br/>
+      </p>
+
+      <p class="order__selection-completed-message">
+      Para el día <strong>Martes</strong> pediste <strong>Ensalada de la casa</strong>, <strong>Pollo poblano</strong> y <strong>Gelatina de fresa</strong>.<br/>
+      </p>
+
+      <p class="order__selection-completed-message">
+      Para el día <strong>Miercoles</strong> pediste <strong>Ensalada de la casa</strong>, <strong>Pollo poblano</strong> y <strong>Gelatina de fresa</strong>.<br/>
+      </p>
+
+      <p class="order__selection-completed-message">
+      Para el día <strong>Jueves</strong> pediste <strong>Ensalada de la casa</strong>, <strong>Pollo poblano</strong> y <strong>Gelatina de fresa</strong>.<br/>
+      </p>
+
+      <button class="order__button" disabled>Confirmar orden.</button>
+    </div>
+
+    <div class="" data-order-step="6">
+      <p class="order__selection-completed-message">
+      Para el día <strong>Lunes</strong> pediste <strong>Ensalada de la casa</strong>, <strong>Pollo poblano</strong> y <strong>Gelatina de fresa</strong>.<br/>
+      </p>
+
+      <p class="order__selection-completed-message">
+      Para el día <strong>Martes</strong> pediste <strong>Ensalada de la casa</strong>, <strong>Pollo poblano</strong> y <strong>Gelatina de fresa</strong>.<br/>
+      </p>
+
+      <p class="order__selection-completed-message">
+      Para el día <strong>Miercoles</strong> pediste <strong>Ensalada de la casa</strong>, <strong>Pollo poblano</strong> y <strong>Gelatina de fresa</strong>.<br/>
+      </p>
+
+      <p class="order__selection-completed-message">
+      Para el día <strong>Jueves</strong> pediste <strong>Ensalada de la casa</strong>, <strong>Pollo poblano</strong> y <strong>Gelatina de fresa</strong>.<br/>
+      </p>
+
+      <p class="order__selection-completed-message">
+      Para el día <strong>Viernes</strong> pediste <strong>Ensalada de la casa</strong>, <strong>Pollo poblano</strong> y <strong>Gelatina de fresa</strong>.<br/>
+      </p>
+
+      <p class="order__selection-completed-message">
+      Como has seleccionado comida para 5 días el paquete que se te cobraría es el <strong>Paquete de 3 días</strong> con un precio de <strong>$369.00</strong>.<br/>
+      </p>
+
+      <button class="order__button">Confirmar orden.</button>
+    </div>
+
+    <div class="" data-order-step="7">
+      <p class="order__message">Te pedimos unos datos personales para saber a quien llevamos la comida.</p>
 
       <div class="order__fieldset">
         <p>
@@ -325,9 +143,12 @@
         <label for="text_field">Un teléfono de casa o celular</label>
         <input type="text" id="text_field">
         </p>
+        <button class="order__button" disabled>Confirmar datos personales</button>
       </div>
-
-      <p class="order__message">Y la dirección a donde quieres que llevemos tu comida</p>
+    </div>
+    <div class="" data-order-step="8">
+      <p class="order__message">Ahora la
+      dirección a donde quieres que llevemos tu comida</p>
 
       <div class="order__fieldset">
         <p>
@@ -342,15 +163,86 @@
         <label for="text_field">Codigo postal</label>
         <input type="text" id="text_field">
         </p>
-
-        <p class="order__hint">
-        Por ahora solo hacemos entregas en la Zona Sur, del la ciudad de Monterrey, Nuevo León, México</p>
-        </p>
       </div>
+
+      <p class="order__hint text-center">Por ahora solo hacemos entregas en la Zona Sur, del la ciudad de Monterrey, Nuevo León, México</p>
       <p class="order__hint text-center">Las entregas son los Domingos de 8pm a 11pm y los Martes y Miercoles de 8:30pm a 11pm.</p>
       <p class="order__hint text-center">El pago de tu orden lo podrás hacer en efectivo el día de la entrega.</p>
 
       <button class="order__button">Confirmar y envíar pedido.</button>
     </div>
+  </div>
+</div>
+
+<div class="l-with-columns" data-order-step="1 2 3 4 5 6 7 8">
+  <div class="l-menu-centered">
+    <div class="menu menu--with-form">
+      <div class="menu__section">
+        <p class="menu__message">Estos son nuestros paquetes</p>
+        <%= partial "packages_list" %>
+      </div>
+
+
+      <div class="menu__section">
+        <p class="menu__message">
+        Este es nuestro menú <br/>
+        <small class="order__hint">
+          Selecciona el día en que quieras recibir cada comida
+          para empezar tu orden para la siguiente semana del 22 al 26 de febrero.
+        </small>
+        </p>
+        <%= partial "menu_with_selection" %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="l-with-columns" data-order-step="3">
+
+
+<div class="l-with-columns" data-order-step="4">
+  <div class="page-header">
+    <h1>My office lunch</h1>
+    <p>Comida casera saludable a domicilio.</p>
+  </div>
+
+    <p class="order__message">Ahora te pedimos unos datos personales y la
+    dirección a donde quieres que llevemos tu comida</p>
+
+    <div class="order__fieldset">
+      <p>
+      <label for="text_field">Tu nombre</label>
+      <input type="text" id="text_field">
+      </p>
+
+      <p>
+      <label for="text_field">Tu correo electrónico</label>
+      <input type="text" id="text_field">
+      </p>
+
+      <p>
+      <label for="text_field">Un teléfono de casa o celular</label>
+      <input type="text" id="text_field">
+      </p>
+
+      <p>
+      <label for="text_field">Calle y Número</label>
+      <input type="text" id="text_field">
+      </p>
+      <p>
+      <label for="text_field">Colonia</label>
+      <input type="text" id="text_field">
+      </p>
+      <p>
+      <label for="text_field">Codigo postal</label>
+      <input type="text" id="text_field">
+      </p>
+    </div>
+
+    <p class="order__hint text-center">Por ahora solo hacemos entregas en la Zona Sur, del la ciudad de Monterrey, Nuevo León, México</p>
+    <p class="order__hint text-center">Las entregas son los Domingos de 8pm a 11pm y los Martes y Miercoles de 8:30pm a 11pm.</p>
+    <p class="order__hint text-center">El pago de tu orden lo podrás hacer en efectivo el día de la entrega.</p>
+
+    <button class="order__button">Confirmar y envíar pedido.</button>
   </div>
 </div>

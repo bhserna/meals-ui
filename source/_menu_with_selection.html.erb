@@ -1,0 +1,41 @@
+<% data.kitchens.my_office_lunch.sections.each do |section| %>
+  <div class="menu__section">
+    <h1 class="menu__section-title"><%= section.type %></h3>
+
+    <div class="menu__items">
+      <% section.dishes.each do |dish| %>
+        <div class="menu__item">
+          <div class="menu__item-image">
+            <img src="<%= dish[:image_url] %>"/>
+          </div>
+
+          <div class="menu__item-content">
+            <div class="menu__item-header">
+              <h4><%= dish[:name] %></h4>
+            </div>
+            <div class="menu__item-description">
+              <p><%= dish[:description] %></p>
+            </div>
+
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Lunes
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Martes
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Miercoles
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Jueves
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"><br/> Viernes
+            </label>
+
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+<% end %>

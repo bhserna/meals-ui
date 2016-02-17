@@ -6,7 +6,7 @@ html = (state) ->
     <button data-before #{if state.currentStep is 1 then "disabled"}>
       <i class="fa fa-arrow-left"></i>
     </button>
-    <button data-next #{if state.currentStep is 5 then "disabled"}>
+    <button data-next #{if state.currentStep is 8 then "disabled"}>
       <i class="fa fa-arrow-right"></i>
     </button>
   </div>

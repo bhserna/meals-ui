@@ -22,8 +22,43 @@
   }
 }
 
+.l-with-columns {
+  @include outer-container;
+}
+
+.l-1-of-2 {
+  @include span-columns(6);
+}
+
+.l-1-of-3 {
+  @include span-columns(4);
+}
+
+.l-2-of-3 {
+  @include span-columns(8);
+}
+
+.l-2-of-3-centered {
+  @include span-columns(6);
+  @include shift(1);
+}
+
+.l-small-centered {
+  @include span-columns(6);
+  @include shift(3);
+}
+
+.l-menu-centered {
+  @include span-columns(10);
+  @include shift(1);
+}
+
 .text-center {
   text-align: center;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .is-hidden {
@@ -32,6 +67,10 @@
 
 .pull-right {
   float: right;
+}
+
+.pull-left {
+  float: left;
 }
 
 .page-header {
@@ -101,6 +140,12 @@
   color: $blue;
 }
 
+.menu__section-title {
+  background: #fafafa;
+  padding: 0.5em;
+}
+
+
 .menu--regular {
   text-align: center;
 
@@ -118,8 +163,31 @@
 }
 
 .menu--with-form {
+  &.menu {
+    padding-right: 1em;
+  }
+
   .menu__message, .menu__section-title {
     text-align: center;
+  }
+
+  .menu__section {
+    margin-bottom: 2em;
+    padding-bottom: 2em;
+  }
+
+  .menu__package-selection {
+    @include outer-container;
+
+    .order__package {
+      @include span-columns(4);
+    }
+
+    .order__package-price {
+      float: none;
+      display: block;
+      padding-top: 1em;
+    }
   }
 
   .menu__item {
@@ -172,6 +240,20 @@
 .order__message {
   font-size: 1.5em;
   text-align: center;
+}
+
+.packages-list {
+  @include outer-container;
+
+  .order__package {
+    @include span-columns(4);
+  }
+
+  .order__package-price {
+    float: none;
+    display: block;
+    padding-top: 1em;
+  }
 }
 
 .order__package {
@@ -249,9 +331,134 @@
   width: 150px;
   position: fixed;
   padding: 1em;
-  right: 0;
+  left: 0;
 
   button {
     margin: 5px 0;
   }
 }
+
+.order-v2 {
+  background: white;
+  width: 300px;
+  position: fixed;
+  max-height: 500px;
+  top: 0;
+  right: 0;
+  border: $base-border;
+  box-shadow: -1px 1px 3px #eee;
+
+  .order {
+    padding: 1em;
+    overflow: auto;
+    height: 100%;
+  }
+
+  .order-controls {
+    text-align: left;
+    padding-bottom: 1em;
+
+    > a {
+      display: block;
+    }
+  }
+
+  .order-toggle {
+    background: #fafafa;
+    text-align:center;
+
+    > a {
+      display: block;
+      padding: 0.5em;
+    }
+  }
+}
+
+.order-v2--closed {
+  > .order {
+    display: none;
+  }
+
+  > .order-toggle {
+    >.order-toggle__hide {
+      display: none;
+    }
+  }
+}
+
+.order-v2--open {
+  > .order-toggle {
+    position: absolute;
+    left: 0;
+    right: 0;
+    border-bottom: $base-border;
+    box-shadow: 1px 1px 1px #eee;
+
+    > .order-toggle__show {
+      display: none;
+    }
+  }
+
+  > .order {
+    padding-top: 3em;
+  }
+}
+
+.hero {  
+  $base-border-radius: 3px !default;
+  $action-color: #477DCA !default;
+  $large-screen: em(860) !default;
+  $hero-background-top: #7F99BE; 
+  $hero-background-bottom: #20392B;
+  $hero-color: white;
+  $gradient-angle: 10deg;
+  $hero-image: 'http://www.wallpaperup.com/uploads/wallpapers/2015/02/01/607568/big_thumb_d3c471f41e95fa2675d77ffb43d5e7cd.jpg';
+
+  @include background(url($hero-image), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
+  background-color: #324766;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 3em;
+
+  margin-bottom: 2em;
+
+  .hero-logo img {
+    height: 4em;
+    margin-bottom: 1em;
+  }
+
+  .hero-inner {
+    @include outer-container;
+    @include clearfix;
+    margin: auto;
+    padding: 3.5em;
+    text-align: center;
+
+    .hero-copy {
+      text-align: center;
+      
+      h1 {
+        color: $hero-color;
+        font-size: 1.6em;
+        margin-bottom: 0.5em;
+
+        @include media($large-screen) {
+          font-size: 1.8em;
+        }
+      }
+
+      p {
+        color: $hero-color;
+        line-height: 1.4em;
+        margin: 0 auto 3em auto; 
+
+        @include media($large-screen) {
+          font-size: 1.1em;
+          max-width: 40%;
+        }
+      }
+    }
+  }
+}
+
