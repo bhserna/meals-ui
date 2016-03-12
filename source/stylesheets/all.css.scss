@@ -158,7 +158,8 @@
   .menu__item {
     @include flex-basis(20em);
     @include flex-grow(0);
-    margin: 0 1em;
+    margin-left: 1em;
+    margin-right: 1em;
   }
 }
 

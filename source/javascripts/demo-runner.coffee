@@ -6,7 +6,7 @@ html = (state) ->
     <button data-before #{if state.currentStep is 1 then "disabled"}>
       <i class="fa fa-arrow-left"></i>
     </button>
-    <button data-next #{if state.currentStep is 8 then "disabled"}>
+    <button data-next #{if state.currentStep is state.steps then "disabled"}>
       <i class="fa fa-arrow-right"></i>
     </button>
   </div>
@@ -33,5 +33,6 @@ $ ->
   state =
     currentStep: 1
     element: $(".js-demo-runner")
+    steps: parseInt($(".js-demo-runner").data("steps"), 10)
 
   render(state)
