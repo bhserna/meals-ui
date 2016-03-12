@@ -455,19 +455,20 @@ html {
     -moz-flex-grow: 0;
     flex-grow: 0;
     -ms-flex-positive: 0;
-    margin: 0 1em; }
+    margin-left: 1em;
+    margin-right: 1em; }
 
-/* line 166, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
+/* line 167, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
 .menu--with-form.menu {
   padding-right: 1em; }
-/* line 170, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
+/* line 171, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
 .menu--with-form .menu__message, .menu--with-form .menu__section-title {
   text-align: center; }
-/* line 174, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
+/* line 175, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
 .menu--with-form .menu__section {
   margin-bottom: 2em;
   padding-bottom: 2em; }
-/* line 179, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
+/* line 180, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
 .menu--with-form .menu__package-selection {
   max-width: 68em;
   margin-left: auto;
@@ -477,7 +478,7 @@ html {
     clear: both;
     content: "";
     display: table; }
-  /* line 182, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
+  /* line 183, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
   .menu--with-form .menu__package-selection .order__package {
     float: left;
     display: block;
@@ -486,12 +487,12 @@ html {
     /* line 89, /Users/bhserna/.rvm/gems/ruby-2.1.2/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
     .menu--with-form .menu__package-selection .order__package:last-child {
       margin-right: 0; }
-  /* line 186, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
+  /* line 187, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
   .menu--with-form .menu__package-selection .order__package-price {
     float: none;
     display: block;
     padding-top: 1em; }
-/* line 193, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
+/* line 194, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
 .menu--with-form .menu__item {
   max-width: 68em;
   margin-left: auto;
@@ -503,7 +504,7 @@ html {
     clear: both;
     content: "";
     display: table; }
-/* line 199, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
+/* line 200, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
 .menu--with-form .menu__item-image {
   float: left;
   display: block;
@@ -514,7 +515,7 @@ html {
   /* line 89, /Users/bhserna/.rvm/gems/ruby-2.1.2/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
   .menu--with-form .menu__item-image:last-child {
     margin-right: 0; }
-/* line 205, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
+/* line 206, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
 .menu--with-form .menu__item-content {
   float: left;
   display: block;
@@ -523,37 +524,37 @@ html {
   /* line 89, /Users/bhserna/.rvm/gems/ruby-2.1.2/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
   .menu--with-form .menu__item-content:last-child {
     margin-right: 0; }
-  /* line 208, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
+  /* line 209, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
   .menu--with-form .menu__item-content > label {
     display: inline-block;
     text-align: center;
     padding: 0.5em;
     background: #fafafa; }
 
-/* line 217, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
+/* line 218, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
 .menu__item--selectable {
   border: 1px solid #ddd;
   border-radius: 3px;
   margin-bottom: 1em;
   padding-bottom: 1em; }
-  /* line 223, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
+  /* line 224, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
   .menu__item--selectable > .menu__item-button {
     display: inline-block; }
 
-/* line 229, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
+/* line 230, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
 .menu__item--selected > .menu__item-button {
   display: none; }
-/* line 233, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
+/* line 234, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
 .menu__item--selected > .menu__item-selected-message {
   display: block;
   color: green; }
 
-/* line 240, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
+/* line 241, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
 .order__message {
   font-size: 1.5em;
   text-align: center; }
 
-/* line 245, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
+/* line 246, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
 .packages-list {
   max-width: 68em;
   margin-left: auto;
@@ -563,7 +564,7 @@ html {
     clear: both;
     content: "";
     display: table; }
-  /* line 248, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
+  /* line 249, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
   .packages-list .order__package {
     float: left;
     display: block;
@@ -572,13 +573,13 @@ html {
     /* line 89, /Users/bhserna/.rvm/gems/ruby-2.1.2/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
     .packages-list .order__package:last-child {
       margin-right: 0; }
-  /* line 252, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
+  /* line 253, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
   .packages-list .order__package-price {
     float: none;
     display: block;
     padding-top: 1em; }
 
-/* line 259, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
+/* line 260, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
 .order__package {
   max-width: 68em;
   margin-left: auto;
@@ -592,7 +593,7 @@ html {
     clear: both;
     content: "";
     display: table; }
-  /* line 266, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
+  /* line 267, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
   .order__package > input[type="radio"] {
     float: left;
     display: block;
@@ -602,7 +603,7 @@ html {
     .order__package > input[type="radio"]:last-child {
       margin-right: 0; }
 
-/* line 271, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
+/* line 272, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
 .order__package-description {
   float: left;
   display: block;
@@ -611,70 +612,70 @@ html {
   /* line 89, /Users/bhserna/.rvm/gems/ruby-2.1.2/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
   .order__package-description:last-child {
     margin-right: 0; }
-  /* line 274, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
+  /* line 275, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
   .order__package-description > ul {
     list-style: disc;
     padding-left: 1em; }
 
-/* line 280, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
+/* line 281, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
 .order__selection-completed-message {
   text-align: center;
   padding: 1em;
   background: #fafafa; }
-  /* line 285, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
+  /* line 286, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
   .order__selection-completed-message > small {
     font-size: 0.95em; }
 
-/* line 290, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
+/* line 291, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
 .order__days-selection-options {
   padding: 1em;
   background: #fafafa;
   margin-bottom: 1em; }
 
-/* line 296, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
+/* line 297, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
 .order__day-selection {
   padding: 1em;
   background: #fafafa;
   margin-bottom: 1em;
   text-align: center; }
-  /* line 302, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
+  /* line 303, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
   .order__day-selection > h1 {
     border-bottom: 1px solid #ddd;
     padding-bottom: 1em;
     margin-bottom: 1em; }
 
-/* line 309, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
+/* line 310, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
 .order__fieldset {
   padding: 1em;
   background: #fafafa;
   margin-bottom: 1em; }
 
-/* line 315, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
+/* line 316, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
 .order__package-price {
   float: right;
   font-size: 1.3em; }
 
-/* line 320, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
+/* line 321, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
 .order__hint {
   color: gray; }
 
-/* line 324, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
+/* line 325, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
 .order__button {
   width: 100%;
   margin-bottom: 1em; }
 
-/* line 329, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
+/* line 330, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
 .demo-runner {
   background: #fafafa;
   width: 150px;
   position: fixed;
   padding: 1em;
   left: 0; }
-  /* line 336, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
+  /* line 337, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
   .demo-runner button {
     margin: 5px 0; }
 
-/* line 341, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
+/* line 342, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
 .order-v2 {
   background: white;
   width: 300px;
@@ -684,49 +685,49 @@ html {
   right: 0;
   border: 1px solid #ddd;
   box-shadow: -1px 1px 3px #eee; }
-  /* line 351, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
+  /* line 352, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
   .order-v2 .order {
     padding: 1em;
     overflow: auto;
     height: 100%; }
-  /* line 357, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
+  /* line 358, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
   .order-v2 .order-controls {
     text-align: left;
     padding-bottom: 1em; }
-    /* line 361, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
+    /* line 362, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
     .order-v2 .order-controls > a {
       display: block; }
-  /* line 366, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
+  /* line 367, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
   .order-v2 .order-toggle {
     background: #fafafa;
     text-align: center; }
-    /* line 370, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
+    /* line 371, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
     .order-v2 .order-toggle > a {
       display: block;
       padding: 0.5em; }
 
-/* line 378, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
+/* line 379, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
 .order-v2--closed > .order {
   display: none; }
-/* line 383, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
+/* line 384, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
 .order-v2--closed > .order-toggle > .order-toggle__hide {
   display: none; }
 
-/* line 390, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
+/* line 391, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
 .order-v2--open > .order-toggle {
   position: absolute;
   left: 0;
   right: 0;
   border-bottom: 1px solid #ddd;
   box-shadow: 1px 1px 1px #eee; }
-  /* line 397, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
+  /* line 398, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
   .order-v2--open > .order-toggle > .order-toggle__show {
     display: none; }
-/* line 402, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
+/* line 403, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
 .order-v2--open > .order {
   padding-top: 3em; }
 
-/* line 407, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
+/* line 408, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
 .hero {
   background: url("http://www.wallpaperup.com/uploads/wallpapers/2015/02/01/607568/big_thumb_d3c471f41e95fa2675d77ffb43d5e7cd.jpg"), -webkit-linear-gradient(10deg, #20392B, #7F99BE), no-repeat #7F99BE scroll;
   background: url("http://www.wallpaperup.com/uploads/wallpapers/2015/02/01/607568/big_thumb_d3c471f41e95fa2675d77ffb43d5e7cd.jpg"), linear-gradient(10deg, #20392B, #7F99BE), no-repeat #7F99BE scroll;
@@ -736,11 +737,11 @@ html {
   background-size: cover;
   padding-bottom: 3em;
   margin-bottom: 2em; }
-  /* line 426, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
+  /* line 427, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
   .hero .hero-logo img {
     height: 4em;
     margin-bottom: 1em; }
-  /* line 431, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
+  /* line 432, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
   .hero .hero-inner {
     max-width: 68em;
     margin-left: auto;
@@ -758,25 +759,25 @@ html {
       clear: both;
       content: "";
       display: table; }
-    /* line 438, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
+    /* line 439, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
     .hero .hero-inner .hero-copy {
       text-align: center; }
-      /* line 441, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
+      /* line 442, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
       .hero .hero-inner .hero-copy h1 {
         color: white;
         font-size: 1.6em;
         margin-bottom: 0.5em; }
         @media screen and (min-width: 53.75em) {
-          /* line 441, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
+          /* line 442, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
           .hero .hero-inner .hero-copy h1 {
             font-size: 1.8em; } }
-      /* line 451, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
+      /* line 452, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
       .hero .hero-inner .hero-copy p {
         color: white;
         line-height: 1.4em;
         margin: 0 auto 3em auto; }
         @media screen and (min-width: 53.75em) {
-          /* line 451, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
+          /* line 452, /Users/bhserna/rails_projects/meals/ui/source/stylesheets/all.css.scss */
           .hero .hero-inner .hero-copy p {
             font-size: 1.1em;
             max-width: 40%; } }

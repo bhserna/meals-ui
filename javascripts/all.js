@@ -10349,7 +10349,7 @@ return jQuery;
   var html, render, showStep;
 
   html = function(state) {
-    return "<div>\n  <h1>Control de Demo</h1>\n  <p>Paso actual <strong>" + state.currentStep + "</strong></p>\n  <button data-before " + (state.currentStep === 1 ? "disabled" : void 0) + ">\n    <i class=\"fa fa-arrow-left\"></i>\n  </button>\n  <button data-next " + (state.currentStep === 8 ? "disabled" : void 0) + ">\n    <i class=\"fa fa-arrow-right\"></i>\n  </button>\n</div>";
+    return "<div>\n  <h1>Control de Demo</h1>\n  <p>Paso actual <strong>" + state.currentStep + "</strong></p>\n  <button data-before " + (state.currentStep === 1 ? "disabled" : void 0) + ">\n    <i class=\"fa fa-arrow-left\"></i>\n  </button>\n  <button data-next " + (state.currentStep === state.steps ? "disabled" : void 0) + ">\n    <i class=\"fa fa-arrow-right\"></i>\n  </button>\n</div>";
   };
 
   render = function(state) {
@@ -10374,7 +10374,8 @@ return jQuery;
     var state;
     state = {
       currentStep: 1,
-      element: $(".js-demo-runner")
+      element: $(".js-demo-runner"),
+      steps: parseInt($(".js-demo-runner").data("steps"), 10)
     };
     return render(state);
   });
