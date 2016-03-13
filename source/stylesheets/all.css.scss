@@ -3,9 +3,15 @@
 @import "bourbon";
 @import "base/base";
 @import "neat";
+@import "accordion-tabs";
 
 .l-page {
   max-width: 800px;
+  margin: auto;
+}
+
+.l-page-with-central-menu {
+  max-width: 900px;
   margin: auto;
 }
 
@@ -163,6 +169,39 @@
   }
 }
 
+.menu--regular-central-menu {
+  text-align: center;
+
+  .menu__items {
+    @include display(flex);
+    @include flex-wrap(wrap);
+    @include justify-content(center);
+  }
+
+  .menu__item {
+    @include flex-basis(15em);
+    @include flex-grow(0);
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+
+  .menu__item-image {
+    height: 10em;
+  }
+
+  .menu__item--selected {
+    > .menu__item-button {
+      display: inline-block;
+    }
+
+    > .menu__item-selected-message {
+      display: block;
+      color: green;
+      margin-bottom: 5px;
+    }
+  }
+}
+
 .menu--with-form {
   &.menu {
     padding-right: 1em;
@@ -304,6 +343,35 @@
     border-bottom: $base-border;
     padding-bottom: 1em;
     margin-bottom: 1em;
+  }
+}
+
+.order__selection-by-day {
+  margin-bottom: 2em;
+  text-align: left;
+
+  > h1 {
+    border-bottom: $base-border;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  > table {
+    margin-top: 0;
+
+    td {
+      padding-left: 0.5em;
+      padding-right: 0.5em;
+    }
+
+    button {
+      border: $base-border;
+      border-color: $blue;
+      background-color: $base-background-color;
+      color: $blue;
+    }
   }
 }
 

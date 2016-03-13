@@ -1,0 +1,28 @@
+<% dishes =  data.kitchens.my_office_lunch.sections.flat_map { |section| section.dishes } %>
+
+<div class="menu__section">
+  <div class="menu__items">
+    <% dishes.each do |dish| %>
+      <div class="menu__item
+        <%= "menu__item--selectable" if defined?(selectable) && selectable %>
+        <%= "menu__item--selected" if defined?(selected) && selected %>">
+        <div class="menu__item-image">
+          <img src="<%= dish[:image_url] %>"/>
+        </div>
+        <div class="menu__item-header">
+          <h4><%= dish[:name] %></h4>
+        </div>
+        <div class="menu__item-description">
+          <p><%= dish[:description] %></p>
+          <p><strong>$60.00</strong></p>
+        </div>
+
+        <div class="menu__item-selected-message">
+          <i class="fa fa-check"></i> Seleccionado<br/>
+        </div>
+
+        <button class="menu__item-button">Agregar</button>
+      </div>
+    <% end %>
+  </div>
+</div>
