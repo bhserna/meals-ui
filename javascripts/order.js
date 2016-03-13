@@ -14,7 +14,8 @@
         maxHeight: $(window).height()
       });
     });
-    return $(".js-order-toggle").click(function() {
+    return $(".js-order-toggle").click(function(e) {
+      e.preventDefault();
       $(".order-v2").toggleClass("order-v2--closed");
       return $(".order-v2").toggleClass("order-v2--open");
     });
